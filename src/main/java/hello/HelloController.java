@@ -15,7 +15,9 @@ public class HelloController {
     public ModelAndView index() {
         Map<String,String> bag = new HashMap<String, String>();
         bag.put("pageTitle", "Spring Boot Sandbox");
-        bag.put("message", "Hello from the sandbox");
+        bag.put("greeting", "Hello from the sandbox");
+        bag.put("farewell", "Farewell from the sandbox");
+        bag.put("footer", "This is some footer text");
 
         return new ModelAndView("views/home", bag);
     }
